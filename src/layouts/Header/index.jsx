@@ -11,10 +11,10 @@ export const Header = () => {
             alt="github-icon"
           />
         </Link>
-        <h1 className="font-bold md:text-4xl text-2xl">Github Finder</h1>
+        <h1 className="font-bold text-4xl">Github Finder</h1>
       </div>
 
-      <nav className="text-2xl space-x-3 hidden md:block font-semibold">
+      <nav className="text-2xl space-x-3 font-semibold">
         <Link to="/">Home</Link>
         <Link to="/search">Search</Link>
         <Link to="/about">About</Link>
