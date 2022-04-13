@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 export const SearchUser = (props) => {
   const [searchValue, setSearchValue] = useState("");
@@ -12,6 +12,7 @@ export const SearchUser = (props) => {
   const onClearHandler = (e) => {
     e.preventDefault();
     setSearchValue("");
+    props.onClearUser();
   }
   return (
     <form

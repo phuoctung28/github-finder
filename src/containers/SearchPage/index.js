@@ -21,12 +21,15 @@ export const SearchPage = () => {
       console.log(error);
     }
   };
+  const onClearUser = () => {
+    setUsers([]);
+  }
   return (
     <div className="mx-8">
     {isError && (
       <div className="bg-red-300 border border-red-500 my-4 py-4 px-4 rounded-md">Please enter the keyword before searching</div>
     )}
-      <SearchUser onSearchUser={onSearchUser} />
+      <SearchUser onSearchUser={onSearchUser} onClearUser={onClearUser}/>
       <UserList users={users} />
     </div>
   );
