@@ -3,7 +3,7 @@ import React from "react";
 export const RepoItem = (props) => {
   const { name, description, fork, forks_url, html_url } = props.repo;
   return (
-    <div className="flex flex-col flex-wrap justify-center p-16 gap-4 border rounded-lg m-4">
+    <div className="flex flex-col h-80 flex-wrap justify-center p-16 gap-4 border rounded-lg m-4">
       <a
         href={html_url}
         target="_blank"
@@ -27,7 +27,7 @@ export const RepoItem = (props) => {
       ) : (
         ""
       )}
-      <div className="text-xl">{description}</div>
+      <div className="text text-xl">{description}</div>
     </div>
   );
 };
