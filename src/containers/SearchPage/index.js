@@ -29,7 +29,7 @@ export const SearchPage = () => {
     {isError && (
       <div className="bg-red-300 border border-red-500 my-4 py-4 px-4 rounded-md">Please enter the keyword before searching</div>
     )}
-      <SearchUser onSearchUser={onSearchUser} onClearUser={onClearUser}/>
+      <SearchUser onSearchUser={onSearchUser}  onClearUser={onClearUser}/>
       <UserList users={users} />
     </div>
   );

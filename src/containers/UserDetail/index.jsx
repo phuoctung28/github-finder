@@ -29,7 +29,7 @@ export const UserDetail = () => {
   }, []);
   return (
     <div className="m-8">
-      <button className="bg-gray-400 py-2 px-4 rounded-md  my-2 font-semibold" onClick={onRedirectToHome}>
+      <button className="bg-gray-400 py-2 px-4 rounded-md  my-2 font-semibold md:block hidden" onClick={onRedirectToHome}>
         <div className="flex items-center">
           <img src="https://img.icons8.com/ios-glyphs/30/000000/back.png"/>
           Back to home

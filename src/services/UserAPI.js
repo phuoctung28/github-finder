@@ -1,17 +1,16 @@
-import axios from "axios";
+import axiosInstance from "../configs/axios";
 export const baseURL = "https://api.github.com";
 export const UserAPI = {
   fetchUser: () => {
-    return axios.get(`${baseURL}/users`);
+    return axiosInstance.get(`/users`);
   },
-
   fetchUserInfo: (username) => {
-    return axios.get(`${baseURL}/users/${username}`);
+    return axiosInstance.get(`/users/${username}`);
   },
   fetchUserRepos: (username) => {
-    return axios.get(`${baseURL}/users/${username}/repos`);
+    return axiosInstance.get(`/users/${username}/repos`);
   },
   searchUser: (keyword) => {
-    return axios.get(`${baseURL}/search/users?q=${keyword}`);
+    return axiosInstance.get(`/search/users?q=${keyword}`);
   },
 };

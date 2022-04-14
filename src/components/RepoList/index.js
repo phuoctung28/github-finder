@@ -7,7 +7,7 @@ export const RepoList = (props) => {
 
   return <div className="flex flex-wrap">
     {repos.length !== 0 ? repos.map((repo) => (
-      <div className="w-1/2" key={repo.id}>
+      <div className="md:w-1/2 w-full" key={repo.id}>
         <RepoItem repo={repo}/>
       </div>
     )) : emptyData}
