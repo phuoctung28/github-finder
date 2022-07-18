@@ -12,7 +12,7 @@ export const UserDetail = () => {
   const navigate = useNavigate();
   const { login } = urlParams;
   const onRedirectToHome = () => {
-    navigate(`/`);
+    navigate(-1);
   }
   useEffect(() => {
     const fetchUserDetails = async () => {
@@ -29,10 +29,10 @@ export const UserDetail = () => {
   }, []);
   return (
     <div className="m-8">
-      <button className="bg-gray-400 py-2 px-4 rounded-md  my-2 font-semibold md:block hidden" onClick={onRedirectToHome}>
+      <button className="bg-blue-400 py-2 px-4 rounded-md  my-2 font-semibold" onClick={onRedirectToHome}>
         <div className="flex items-center">
           <img src="https://img.icons8.com/ios-glyphs/30/000000/back.png"/>
-          Back to home
+          Back
         </div>
       </button>
       <UserCard
